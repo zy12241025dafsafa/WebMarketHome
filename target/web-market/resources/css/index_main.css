@@ -1,0 +1,41 @@
+body{
+    margin: 0px auto;
+    font-size:75%;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, SimSun, 宋体;
+}
+
+.main_header {
+    width:100%;
+    height:80px;border:1px solid #E8E8E8;
+    min-width:1000px;
+    max-width:1200px;
+    margin:0 auto;
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:expression_r( Math.max(1000, Math.min(1200, document.body.offsetWidth*0.99))+"px" );
+}
+.main_header .right_layout{float:left;border: 1px solid #ff0000}
+.main_header .right_layout .logo_pic{border: 1px solid #ff0000}
+
+.main_header .search_bar{margin-left: 40px;margin-right:40px;  }
+.main_header .search_bar .search_input{width:400px;height:48px;float:left;border-radius: 5px;}
+.search_button {float:left;color:white;height:44px;width:80px;
+    background-color: #FA5000;text-align: center;line-height: 44px;
+    font-size: 16px;margin-left: 5px;}
+.search_button :hover{cursor: pointer;}
+.search_button a{color: white;text-decoration: none}
+
+
+.main_header .left_layout{border: 1px solid #ff0000;margin-right: 10px}
+.main_header .left_layout ul{list-style: none;line-height: 20px;height:20px;}
+.main_header .left_layout li{float:left; margin-left: 10px;align-items: center}
+.main_header .left_layout li a{ font-size:16px; text-decoration: none;color: #A9A9A9;}
+.main_header .left_layout li:hover a{color:#FA5000;}
+.login_out{display: none;}
+.login_in{display: inline;}
+.login_user{display: none;}
+.user_list{display: none;list-style: none;}
+
+

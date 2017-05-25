@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dudu.web.dao.CommentDao">
+  <resultMap id="BaseResultMap" type="com.dudu.web.model.TComment">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="comment_person" jdbcType="VARCHAR" property="commentPerson" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="service_star" jdbcType="BIT" property="serviceStar" />
+    <result column="track_star" jdbcType="BIT" property="trackStar" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="Product_ids" jdbcType="VARCHAR" property="productIds" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, comment_person, content, service_star, track_star, create_time, Product_ids
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_comment
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_comment
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.dudu.web.model.TComment">
+    insert into t_comment (id, comment_person, content, 
+      service_star, track_star, create_time, 
+      Product_ids)
+    values (#{id,jdbcType=BIGINT}, #{commentPerson,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{serviceStar,jdbcType=BIT}, #{trackStar,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{productIds,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dudu.web.model.TComment">
+    insert into t_comment
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="commentPerson != null">
+        comment_person,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="serviceStar != null">
+        service_star,
+      </if>
+      <if test="trackStar != null">
+        track_star,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="productIds != null">
+        Product_ids,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="commentPerson != null">
+        #{commentPerson,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="serviceStar != null">
+        #{serviceStar,jdbcType=BIT},
+      </if>
+      <if test="trackStar != null">
+        #{trackStar,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="productIds != null">
+        #{productIds,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dudu.web.model.TComment">
+    update t_comment
+    <set>
+      <if test="commentPerson != null">
+        comment_person = #{commentPerson,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="serviceStar != null">
+        service_star = #{serviceStar,jdbcType=BIT},
+      </if>
+      <if test="trackStar != null">
+        track_star = #{trackStar,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="productIds != null">
+        Product_ids = #{productIds,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dudu.web.model.TComment">
+    update t_comment
+    set comment_person = #{commentPerson,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      service_star = #{serviceStar,jdbcType=BIT},
+      track_star = #{trackStar,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      Product_ids = #{productIds,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
