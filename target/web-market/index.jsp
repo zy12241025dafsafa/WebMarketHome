@@ -10,14 +10,18 @@
 
 <body>
 
-    <%--<div id="welcome">--%>
-        <%--<ul>--%>
-            <%--<li class="exit_sys"><a class="exit_system" href="index.jsp">退出系统</a></li>--%>
-            <%--<li class="msg"><a href="IndexAction_jumpMessage.json">站内信<span class="count">--%>
-                <%--${count}</span></a></li>--%>
-            <%--<li class="user"><div><span>欢迎您,${session.phone}</span></div></li>--%>
-        <%--</ul>--%>
-    <%--</div>--%>
+    <div class="banner_top">
+        <a href="index.jsp"><img src="${ctx}/resources/img/gallery/item_img1.jpg"/></a>
+    </div>
+
+    <div class="welcome">
+        <ul>
+            <li class="exit_sys"><a class="exit_system" href="index.jsp">退出系统</a></li>
+            <li class="msg"><a href="IndexAction_jumpMessage.json">站内信(21)<span class="count">${count}</span></a></li>
+            <li class="user"><span>欢迎您,zhangy${session.phone}</span></li>
+            <li class="saler_enter"><a href="sale_enter.json"><span>卖家入口></span></a></li>
+        </ul>
+    </div>
 
     <!-- 分类，LOGO，搜索框，购物车，收藏清单(wishlist),用户中心(登陆，注册等) -->
     <div class="main_header">
@@ -54,40 +58,20 @@
         </div>
     </div>
 
-    <%--<!-- 产品分类及推荐产品轮播区 -->--%>
-    <%--<div class="first_div">--%>
-        <%--<ul>--%>
-            <%--<!-- 分类 -->--%>
-            <%--<li><div class="category"><ul></ul></div></li>--%>
-            <%--<!-- 轮播区 -->--%>
-            <%--<li>--%>
-                <%--<div class="banner">--%>
-                    <%--<div id="focus">--%>
-                        <%--<ul>--%>
-                            <%--<li class="li_1"><img src="${ctx}/resources/img/banner.png"></li>--%>
-                            <%--<li class="li_2"><img src="${ctx}/resources/img/banner.png"></li>--%>
-                            <%--<li class="li_3"><img src="${ctx}/resources/img/banner.png"></li>--%>
-                            <%--<li class="li_4"><img src="${ctx}/resources/img/banner.png"></li>--%>
-                            <%--<li class="li_5"><img src="${ctx}/resources/img/banner.png"></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<!--focus end-->--%>
-                    <%--<!-- 商家推荐品展示区 -->--%>
-                    <%--<div class="recommend_area">--%>
-                        <%--<div class="recommend_text"><span>Recommend Products</span></div>--%>
+    <!-- 产品分类及推荐产品轮播区 -->
+    <div class="category_banner_area">
+        <div>
+            <!-- 商品分类 -->
+            <div class="category"></div>
+            <!-- 轮播区 -->
+            <div class="banner"></div>
+            <!-- 推荐商店-->
+            <div class="recomand_stores"></div>
+        </div>
+    </div>
+    <!-- end产品分类及推荐产品轮播区 -->
 
-                    <%--</div>--%>
-                <%--</div>--%>
-            <%--</li>--%>
-            <%--<!-- 每周热销品 -->--%>
-            <%--<li>--%>
-                <%--<div class="weekly_area">--%>
-                    <%--<div class="index_top_selling"><span>每周热卖品</span></div>--%>
-                <%--</div>--%>
-            <%--</li>--%>
-        <%--</ul>--%>
-    <%--</div>--%>
-    <%--<!-- end产品分类及推荐产品轮播区 -->--%>
+
 
     <%--<!-- 打折促销产品区 -->--%>
     <%--<div class="second_div">--%>
