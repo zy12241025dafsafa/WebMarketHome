@@ -103,14 +103,14 @@
 
 
 
-    <%--<!-- 打折促销产品区 -->--%>
-    <%--<div class="second_div">--%>
-        <%--<div class="index_text"><span>打折促销区</span></div>--%>
-        <%--<div class="discount_area">--%>
+    <!-- 打折促销产品区 -->
+    <div class="second_div">
+        <div class="index_text"><p>Discount Area</p></div>
+        <div class="discount_area">
 
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<!-- end打折促销产品区 -->--%>
+        </div>
+    </div>
+    <!-- end打折促销产品区 -->
 
     <%--<!-- 新品推荐区 -->--%>
     <%--<div class="three_div">--%>
