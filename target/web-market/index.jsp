@@ -5,6 +5,7 @@
 
 <head>
     <title>名牌汇商城</title>
+    <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/bootstrap/bootstrap.css" />
     <link href="${ctx}/resources/css/index_main.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -58,29 +59,58 @@
         </div>
     </div>
 
+
     <!-- 产品分类及推荐产品轮播区 -->
     <div class="category_banner_area">
-        <div>
-            <!-- 商品分类 -->
-            <div class="category"></div>
-            <!-- 轮播区 -->
-            <div class="banner"></div>
-            <!-- 推荐商店-->
-            <div class="recomand_stores"></div>
+        <div class="content">
+            <!-- 热门分类标签栏-->
+            <div class="hot_category_bar">
+                <div class="all_category"><label>CATEGORY</label><a href="index.jsp">See All ></a></div>
+                <ul>
+                    <li><a><label>Brand Design Belts</label></a></li>
+                    <li><a><label>Women Chothes</label></a></li>
+                    <li><a><label>Bestselling</label></a></li>
+                    <li><a><label>Tech Discovery</label></a></li>
+                </ul>
+            </div>
+            <!-- end 热门分类栏-->
+            <div>
+                <!-- 商品分类 -->
+                <div class="category">
+                    <ul>
+                        <li><a href="index.jsp"><label>皮带</label></a></li>
+                        <li><a href="index.jsp"><label>珠宝</label></a></li>
+                        <li><a href="index.jsp"><label>运动</label></a></li>
+                        <li><a href="index.jsp"><label>冬季女装</label></a></li>
+                        <li><a href="index.jsp"><label>假发</label></a></li>
+                        <li><a href="index.jsp"><label>科技</label></a></li>
+                        <li><a href="index.jsp"><label>家居用品 </label></a></li>
+                    </ul>
+
+                </div>
+                <!-- 轮播区 -->
+                <div class="banner">
+                    <img src="${ctx}/resources/img/gallery/image1.jpg">
+                </div>
+                <!-- 推荐商店-->
+                <div class="recomand_stores">
+                    <img src="${ctx}/resources/img/pages/img1_2.png">
+                </div>
+            </div>
         </div>
     </div>
     <!-- end产品分类及推荐产品轮播区 -->
 
 
 
-    <%--<!-- 打折促销产品区 -->--%>
-    <%--<div class="second_div">--%>
-        <%--<div class="index_text"><span>打折促销区</span></div>--%>
-        <%--<div class="discount_area">--%>
+    <!-- 打折促销产品区 -->
+    <div class="second_div">
+        <div class="index_text"><p>Discount Area</p></div>
+        <div class="discount_area">
 
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<!-- end打折促销产品区 -->--%>
+        </div>
+    </div>
+    <!-- end打折促销产品区 -->
 
     <%--<!-- 新品推荐区 -->--%>
     <%--<div class="three_div">--%>
