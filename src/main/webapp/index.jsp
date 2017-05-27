@@ -5,6 +5,7 @@
 
 <head>
     <title>名牌汇商城</title>
+    <link rel="stylesheet" type="text/css" href="${ctx}/resources/css/bootstrap/bootstrap.css" />
     <link href="${ctx}/resources/css/index_main.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -62,7 +63,6 @@
     <!-- 产品分类及推荐产品轮播区 -->
     <div class="category_banner_area">
         <div class="content">
-
             <!-- 热门分类标签栏-->
             <div class="hot_category_bar">
                 <div class="all_category"><label>CATEGORY</label><a href="index.jsp">See All ></a></div>
@@ -74,7 +74,6 @@
                 </ul>
             </div>
             <!-- end 热门分类栏-->
-
             <div>
                 <!-- 商品分类 -->
                 <div class="category">
@@ -90,9 +89,13 @@
 
                 </div>
                 <!-- 轮播区 -->
-                <div class="banner"></div>
+                <div class="banner">
+                    <img src="${ctx}/resources/img/gallery/image1.jpg">
+                </div>
                 <!-- 推荐商店-->
-                <div class="recomand_stores"></div>
+                <div class="recomand_stores">
+                    <img src="${ctx}/resources/img/pages/img1_2.png">
+                </div>
             </div>
         </div>
     </div>
