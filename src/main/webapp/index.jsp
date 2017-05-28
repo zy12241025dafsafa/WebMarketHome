@@ -90,7 +90,49 @@
                 </div>
                 <!-- 轮播区 -->
                 <div class="banner">
-                    <img src="${ctx}/resources/img/gallery/image1.jpg">
+                    <%--<img src="${ctx}/resources/img/gallery/image1.jpg">--%>
+                        <div id="slidershow" class="carousel slide">
+                            <!-- 设置图片轮播的顺序 -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+                                <li data-target="#slidershow" data-slide-to="1"></li>
+                                <li data-target="#slidershow" data-slide-to="2"></li>
+                                <li data-target="#slidershow" data-slide-to="3"></li>
+                                <li data-target="#slidershow" data-slide-to="4"></li>
+                                <li data-target="#slidershow" data-slide-to="5"></li>
+                            </ol>
+                            <!-- 设置轮播图片 -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img1.jpg" alt=""></a>
+                                    <%--<div class="carousel-caption">--%>
+                                        <%--<h3>图片标题1</h3>--%>
+                                        <%--<p>描述内容1...</p>--%>
+                                    <%--</div>--%>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img3.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img4.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img5.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/works/img6.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#" role="button">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#" role="button">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
                 </div>
                 <!-- 推荐商店-->
                 <div class="recomand_stores">
@@ -101,13 +143,106 @@
     </div>
     <!-- end产品分类及推荐产品轮播区 -->
 
-
-
     <!-- 打折促销产品区 -->
     <div class="second_div">
         <div class="index_text"><p>Discount Area</p></div>
         <div class="discount_area">
+            <div class="row">
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image3.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail" >
+                            <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                </div>
+            <div class="row">
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image5.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail">
+                            <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a herf="#" class="thumbnail" >
+                            <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- end打折促销产品区 -->
 
+    <!-- 分类推荐区 -->
+    <div class="third_div">
+        <div class="index_text"><p>Hot Category Area</p></div>
+        <div class="categorys_area">
+            <div class="row">
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image3.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail" >
+                        <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image5.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a herf="#" class="thumbnail" >
+                        <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end打折促销产品区 -->
@@ -211,9 +346,10 @@
 
 
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/jquery-3.2.1.min.js"> </script>
+<script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/bootstrap.min.js"> </script>
 <script type="text/javascript" src="${ctx}/resources/js/jqthumb.min.js"></script>
 <script type="text/javascript" src="${ctx}/resources/js/jQuery.asyncLoading.js"></script>
-<%--<script src="${ctx}/resources/js/index.js" type="text/javascript"></script>--%>
+<script src="${ctx}/resources/js/index.js" type="text/javascript"></script>
 
 </body>
 </html>
