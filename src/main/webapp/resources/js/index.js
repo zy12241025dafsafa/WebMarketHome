@@ -13,17 +13,25 @@ $(document).ready(function(){
 	// 	$('.user_list').hide();
 	// }
 	// ) ;
-	$("#slidershow").carousel({
-		interval:2000
-	});
-	$("#slidershow a.left").click(function(){
-		$(".carousel").carousel("prev");
-	});
-	$("#slidershow a.right").click(function(){
-		$(".carousel").carousel("next");
-	});
+    banner_scroll('slidershow');
+    banner_scroll('slidershow_tech');
+    banner_scroll('slidershow_wc');
+
 	
 });
+
+//轮播图的自动定时滚动
+function banner_scroll(viewClass) {
+    $("#"+viewClass).carousel({
+        interval:2000
+    });
+    $("#"+viewClass+" a.left").click(function(){
+        $(".carousel").carousel("prev");
+    });
+    $("#"+viewClass+" a.right").click(function(){
+        $(".carousel").carousel("next");
+    });
+}
 
 function toggleUserList(show){
 

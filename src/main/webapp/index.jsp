@@ -60,7 +60,7 @@
     </div>
 
 
-    <!-- 产品分类及推荐产品轮播区 -->
+    <!-- 产品分类及产品轮播区 -->
     <div class="category_banner_area">
         <div class="content">
             <!-- 热门分类标签栏-->
@@ -150,44 +150,44 @@
             <div class="row">
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image1.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image2.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image3.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image3.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail" >
-                            <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image4.jpg">
                         </a>
                     </div>
                 </div>
             <div class="row">
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image5.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image5.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image2.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail">
-                            <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image4.jpg">
                         </a>
                     </div>
                     <div class="col-md-3">
                         <a herf="#" class="thumbnail" >
-                            <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                            <img src="${ctx}/resources/img/gallery/image1.jpg">
                         </a>
                     </div>
                 </div>
@@ -196,153 +196,334 @@
     <!-- end打折促销产品区 -->
 
     <!-- 分类推荐区 -->
-    <div class="third_div">
-        <div class="index_text"><p>Hot Category Area</p></div>
-        <div class="categorys_area">
+    <div class="category_div">
+        <ul>
+            <!-- 科技类-->
+            <li>
+                <div class="categorys_area">
+                    <div class="category_list">
+                        <span>Tech & PhoneSet</span>
+                        <ul>
+                            <li><a href="index.jsp"><label>cell phone</label></a></li>
+                            <li><a href="index.jsp"><label>fly plane</label></a></li>
+                            <li><a href="index.jsp"><label>screen sline</label></a></li>
+                            <li><a href="index.jsp"><label>watch phone</label></a></li>
+                            <li><a href="index.jsp"><label>art technology</label></a></li>
+                            <li><a href="index.jsp"><label>ali inner</label></a></li>
+                            <li><a href="index.jsp"><label>pad poll</label></a></li>
+                        </ul>
+                    </div>
+                    <div class="category_banner">
+                        <div id="slidershow_tech" class="carousel slide">
+                            <!-- 设置图片轮播的顺序 -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#slidershow_tech" data-slide-to="0"></li>
+                                <li data-target="#slidershow_tech" data-slide-to="1"></li>
+                                <li data-target="#slidershow_tech" data-slide-to="2"></li>
+                                <li data-target="#slidershow_tech" data-slide-to="3"></li>
+                            </ol>
+                            <!-- 设置轮播图片 -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/1.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/3.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/4.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#" onclick="return false" role="button">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#" onclick="return false" role="button">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image1.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image4.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image2.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- 女装类-->
+            <li>
+                <div class="categorys_area">
+                    <div class="category_list">
+                        <span>Women Clothes</span>
+                        <ul>
+                            <li><a href="index.jsp"><label>Dresses</label></a></li>
+                            <li><a href="index.jsp"><label>Blouses & Shirts</label></a></li>
+                            <li><a href="index.jsp"><label>Jumppsuits</label></a></li>
+                            <li><a href="index.jsp"><label>Jackets</label></a></li>
+                            <li><a href="index.jsp"><label>Trench Coasts</label></a></li>
+                            <li><a href="index.jsp"><label>Sunglasses</label></a></li>
+                            <li><a href="index.jsp"><label>pad poll</label></a></li>
+                        </ul>
+                    </div>
+                    <div class="category_banner">
+                        <div id="slidershow_wc" class="carousel slide">
+                            <!-- 设置图片轮播的顺序 -->
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#slidershow_wc" data-slide-to="0"></li>
+                                <li data-target="#slidershow_wc" data-slide-to="1"></li>
+                                <li data-target="#slidershow_wc" data-slide-to="2"></li>
+                                <li data-target="#slidershow_wc" data-slide-to="3"></li>
+                            </ol>
+                            <!-- 设置轮播图片 -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/5.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/6.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/7.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a class="banner_img" href="##"><img src="${ctx}/resources/img/category/8.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#" onclick="return false" role="button">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#" onclick="return false" role="button">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="category_items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image1.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image4.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image2.jpg">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a herf="#" class="thumbnail">
+                                    <img src="${ctx}/resources/img/gallery/image3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- end分类推荐区 -->
+
+    <!-- 推荐产品区 -->
+    <div class="recommand_div">
+        <div class="index_text"><p>Recommand Area</p></div>
+        <div class="recommand_area">
             <div class="row">
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image1.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image2.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image3.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image3.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail" >
-                        <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail" >
+                        <img src="${ctx}/resources/img/gallery/image4.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image5.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image1.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image2.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image2.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail">
-                        <img src="${ctx}/resources/img/gallery/image4.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail">
+                        <img src="${ctx}/resources/img/gallery/image3.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a herf="#" class="thumbnail" >
-                        <img src="${ctx}/resources/img/gallery/image1.jpg" style="height:180px;width:100%;display: block">
+                    <a href="#" class="thumbnail" >
+                        <img src="${ctx}/resources/img/gallery/image4.jpg">
+                        <div class="product_info">
+                            <label class="price">$36.00</label><br>
+                            <label class="discount_price">$24.00</label><br>
+                            <label class="stars">*****</label>
+                            <label class="order">15 orders</label>
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end打折促销产品区 -->
-
-    <%--<!-- 新品推荐区 -->--%>
-    <%--<div class="three_div">--%>
-        <%--<div class="index_text"><span>新品推荐区</span></div>--%>
-        <%--<div class="new_area">--%>
-
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<!-- end新品推荐区 -->--%>
-
-    <%--<!-- 联系方式，网站说明，合作伙伴 -->--%>
-    <%--<div class="end_div">--%>
-        <%--<!-- 购物指南，支付方式，订单服务，配送方式，退换货，商家服务 -->--%>
-        <%--<div class="div1">--%>
-            <%--<ul>--%>
-                <%--<li>--%>
-                    <%--<div class="buy_index">--%>
-                        <%--<span>购物指南</span>--%>
-                        <%--<ul>--%>
-                            <%--<li><a class="a1" href="/cart.json">购物流程</a></li>--%>
-                            <%--<li><a class="a2" href="/wishlist.json">发票制度</a></li>--%>
-                            <%--<li><a class="a3" href="/usercenter.json">帐户管理</a></li>--%>
-                            <%--<li><a class="a4" href="/cart.json">会员优惠</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
-
-                <%--<li>--%>
-                    <%--<!-- 支付方式 -->--%>
-                    <%--<div class="pay_index">--%>
-                        <%--<span>支付方式</span>--%>
-                        <%--<ul>--%>
-                            <%--<li><a class="a1" href="/cart.json">货到付款</a></li>--%>
-                            <%--<li><a class="a2" href="/wishlist.json">网上支付</a></li>--%>
-                            <%--<li><a class="a3" href="/usercenter.json">汇积分支付</a></li>--%>
-                            <%--<li><a class="a4" href="/cart.json">银行转帐</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
-
-                <%--<li>--%>
-                    <%--<!-- 订单服务 -->--%>
-                    <%--<div class="order_index">--%>
-                        <%--<span>订单服务</span>--%>
-                        <%--<ul>--%>
-                            <%--<li><a class="a1" href="/cart.json">订单配送查询</a></li>--%>
-                            <%--<li><a class="a2" href="/wishlist.json">订单状态说明</a></li>--%>
-                            <%--<li><a class="a3" href="/usercenter.json">自助取消订单</a></li>--%>
-                            <%--<li><a class="a4" href="/cart.json">自助修改订单</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
-
-                <%--<li>--%>
-                    <%--<!-- 配送方式 -->--%>
-                    <%--<div class="delivery_index">--%>
-                        <%--<span>配送方式</span>--%>
-                        <%--<ul>--%>
-                            <%--<li><a class="a1" href="/cart.json">配送范围及免邮标准</a></li>--%>
-                            <%--<li><a class="a4" href="/cart.json">验货与签收</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
+    <!-- end推荐产品区 -->
 
 
-                <%--<li>--%>
-                    <%--<!-- 退换货 -->--%>
-                    <%--<div class="return_package_index">--%>
-                        <%--<span>退换货</span>--%>
-                        <%--<ul>--%>
-                            <%--<li><a class="a1" href="/cart.json">退换货政策</a></li>--%>
-                            <%--<li><a class="a2" href="/wishlist.json">自助申请退换货</a></li>--%>
-                            <%--<li><a class="a3" href="/usercenter.json">退换货进度查询</a></li>--%>
-                            <%--<li><a class="a4" href="/cart.json">退款方式和时间</a></li>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
-            <%--</ul>--%>
-        <%--</div>--%>
-        <%--<!-- end -->--%>
-        <%--<!--  合作伙伴 -->--%>
-        <%--<div class="div2">--%>
-            <%--<span class="pertner_text">合作伙伴:</span>--%>
-            <%--<ul>--%>
-                <%--<li><img style="width: 30px;margin-left: 10px;margin-right: 10px"--%>
-                         <%--src="${ctx}/resources/img/i_sicon2.jpg"></li>--%>
-                <%--<li><img style="width: 30px;margin-left: 10px;margin-right: 10px"--%>
-                         <%--src="${ctx}/resources/img/i_sicon2.jpg"></li>--%>
-                <%--<li><img style="width: 30px;margin-left: 10px;margin-right: 10px"--%>
-                         <%--src="${ctx}/resources/img/i_sicon2.jpg"></li>--%>
-                <%--<li><img style="width: 30px;margin-left: 10px;margin-right: 10px"--%>
-                         <%--src="${ctx}/resources/img/i_sicon2.jpg"></li>--%>
-            <%--</ul>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-    <%--<!-- end 联系方式，网站说明，合作伙伴等-->--%>
+    <!-- 联系方式，网站说明，合作伙伴 -->
+    <div class="end_div">
+        <!-- 购物指南，支付方式，订单服务，配送方式，退换货，商家服务 -->
+        <div class="table_profiles">
+            <table width="1000" border="0" cellspacing="5px" cellpadding="10px">
+                <tr>
+                    <th align="center">购物指南</th>
+                    <th align="center">支付方式</th>
+                    <th align="center">订单服务</th>
+                    <th align="center">配送方式</th>
+                    <th align="center">退换货</th>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">购物流程</a></td>
+                    <td><a class="a1" href="/cart.json">货到付款</a></td>
+                    <td><a class="a1" href="/cart.json">订单配送查询</a></td>
+                    <td><a class="a1" href="/cart.json">配送范围及免邮标准</a></td>
+                    <td><a class="a1" href="/cart.json">退换货政策</a></td>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">发票制度</a></td>
+                    <td><a class="a1" href="/cart.json">网上支付</a></td>
+                    <td><a class="a1" href="/cart.json">订单状态说明</a></td>
+                    <td><a class="a1" href="/cart.json">验货与签收</a></td>
+                    <td><a class="a1" href="/cart.json">自助申请退换货</a></td>
 
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">帐户管理</a></td>
+                    <td><a class="a1" href="/cart.json">汇积分支付</a></td>
+                    <td><a class="a1" href="/cart.json">自助取消订单</a></td>
+                    <td><a class="a1" href="/cart.json">退款方式和时间</a></td>
+                    <td><a class="a1" href="/cart.json">退换货进度查询</a></td>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">会员优惠</a></td>
+                    <td><a class="a1" href="/cart.json">银行转帐</a></td>
+                    <td><a class="a1" href="/cart.json">自助修改订单</a></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="cooprate">
+            <p>合作伙伴</p>
+        </div>
+    </div>
+    <!-- end 联系方式，网站说明，合作伙伴等-->
 
 
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/jquery-3.2.1.min.js"> </script>
