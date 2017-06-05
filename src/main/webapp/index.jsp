@@ -519,15 +519,39 @@
 
             </table>
         </div>
-        <div class="cooprate">
-            <p>合作伙伴</p>
+        <div class="table_aboutus">
+            <table width="1000" border="0" cellspacing="5px" cellpadding="10px">
+                <tr>
+                    <th align="center">关于诚易</th>
+                    <th align="center">诚易支付</th>
+                    <th align="center">联系我们</th>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">诚易官网</a></td>
+                    <td><a class="a1" href="/cart.json">货到付款</a></td>
+                    <td><a class="a1" href="/cart.json">客服电话</a></td>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">联系我们</a></td>
+                    <td><a class="a1" href="/cart.json">在线支付</a></td>
+                    <td><a class="a1" href="/cart.json">400-666-0582</a></td>
 
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">诚易简介</a></td>
+                    <td><a class="a1" href="/cart.json">支付说明</a></td>
+                    <td><a class="a1" href="/cart.json">08754-21132121</a></td>
+                </tr>
+                <tr>
+                    <td><a class="a1" href="/cart.json">广告服务</a></td>
+                    <td><a class="a1" href="/cart.json"></a></td>
+                    <td><a class="a1" href="/cart.json"></a></td>
+                </tr>
 
-
+            </table>
         </div>
     </div>
     <!-- end 联系方式，网站说明，合作伙伴等-->
-
 
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/jquery-3.2.1.min.js"> </script>
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/bootstrap.min.js"> </script>

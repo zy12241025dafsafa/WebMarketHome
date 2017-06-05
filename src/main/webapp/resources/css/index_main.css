@@ -213,12 +213,11 @@ body{
 }
 
 /* 页尾商城介绍*/
-.end_div .table_profiles{justify-content: center;align-items: center;margin-top: 20px}
-.end_div .table_profiles table{margin: 0 auto}
-.end_div .table_profiles table th{text-align: center;vertical-align:middle;color:#999999;font-weight: bold;}
-.end_div .table_profiles table td {text-align: center;font-size: 12px;color: #999999;}
-.end_div .table_profiles table td a{color: #999999;}
+.end_div  {justify-content: center;align-items: center;margin-top: 20px}
+.end_div  table{margin: 0 auto}
+.end_div  table th{text-align: center;vertical-align:middle;color:#999999;font-weight: bold;}
+.end_div  table td {text-align: center;font-size: 12px;color: #999999;}
+.end_div  table td a{color: #999999;}
 
-/*合作伙伴*/
-.end_div .cooprate{justify-content: center;align-items: center;margin-top: 10px;
-    margin-bottom: 20px;border-top: 1px solid #999999}
+.end_div .table_aboutus {margin-top: 20px;border-top: 1px solid #E8E8E8}
+
