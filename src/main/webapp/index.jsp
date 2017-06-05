@@ -521,6 +521,9 @@
         </div>
         <div class="cooprate">
             <p>合作伙伴</p>
+
+
+
         </div>
     </div>
     <!-- end 联系方式，网站说明，合作伙伴等-->
