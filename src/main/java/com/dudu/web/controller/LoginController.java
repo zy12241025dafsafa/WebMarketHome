@@ -5,14 +5,9 @@ import com.dudu.web.model.TUser;
 import com.dudu.web.service.UserService;
 import com.dudu.web.util.RequestUtils;
 import com.dudu.web.util.ResponseUtils;
-import com.sun.javafx.sg.prism.NGShape;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;

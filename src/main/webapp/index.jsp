@@ -11,54 +11,8 @@
 
 <body>
 
-    <div class="banner_top">
-        <a href="index.jsp"><img src="${ctx}/resources/img/gallery/item_img1.jpg"/></a>
-    </div>
-
-    <div class="welcome">
-        <ul>
-            <li class="exit_sys"><a class="exit_system" href="index.jsp">退出系统</a></li>
-            <li class="msg"><a href="IndexAction_jumpMessage.json">站内信(21)<span class="count">${count}</span></a></li>
-            <li class="user"><span>欢迎您,zhangy${session.phone}</span></li>
-            <li class="saler_enter"><a href="sale_enter.json"><span>卖家入口></span></a></li>
-        </ul>
-    </div>
-
-    <!-- 分类，LOGO，搜索框，购物车，收藏清单(wishlist),用户中心(登陆，注册等) -->
-    <div class="main_header">
-        <div class="right_layout">
-            <div class="logo_pic">
-                <img src="${ctx}/resources/img/logo.jpg">
-            </div>
-        </div>
-        <div class="search_bar">
-            <input class="search_input" placeholder="请输入关键字..." type="text" name="keyword"/>
-            <div class="search_button">
-                <a href="/cart.json"><span>搜索</span></a>
-            </div>
-        </div>
-        <div class="left_layout">
-            <span class="login_user">${session.phone}</span>
-            <ul>
-                <li><img src="${ctx}/resources/img/flags/cn.png">
-                    <a class="cart_show" href="cart.json">Cart(${cart_count})</a></li>
-                <li><img src="${ctx}/resources/img/flags/ci.png">
-                    <a class="wishlist_show" href="wishlist.json">Wish List(${wishlist_count})</a></li>
-                <li class="login_in"><img src="${ctx}/resources/img/flags/it.png">
-                    <a class="user" href="login_actionLogin.json">Login In</a></li>
-                <li class="login_out"><img src="${ctx}/resources/img/flags/mh.png">
-                    <a class="user" >Login Out</a></li>
-            </ul>
-
-            <ul class="user_list">
-                <li>My Order</li>
-                <li>User Center</li>
-                <li>Messages Center</li>
-            </ul>
-
-        </div>
-    </div>
-
+    <!-- 页面头部引入-->
+    <%@include file="WEB-INF/jsp/header.jsp" %>
 
     <!-- 产品分类及产品轮播区 -->
     <div class="category_banner_area">
@@ -461,7 +415,7 @@
                     </a>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="thumbnail" >
+                    <a href="/product?pid=12" class="thumbnail" >
                         <img src="${ctx}/resources/img/gallery/image4.jpg">
                         <div class="product_info">
                             <label class="price">$36.00</label><br>
@@ -475,84 +429,8 @@
         </div>
     </div>
     <!-- end推荐产品区 -->
-
-
-    <!-- 联系方式，网站说明，合作伙伴 -->
-    <div class="end_div">
-        <!-- 购物指南，支付方式，订单服务，配送方式，退换货，商家服务 -->
-        <div class="table_profiles">
-            <table width="1000" border="0" cellspacing="5px" cellpadding="10px">
-                <tr>
-                    <th align="center">购物指南</th>
-                    <th align="center">支付方式</th>
-                    <th align="center">订单服务</th>
-                    <th align="center">配送方式</th>
-                    <th align="center">退换货</th>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">购物流程</a></td>
-                    <td><a class="a1" href="/cart.json">货到付款</a></td>
-                    <td><a class="a1" href="/cart.json">订单配送查询</a></td>
-                    <td><a class="a1" href="/cart.json">配送范围及免邮标准</a></td>
-                    <td><a class="a1" href="/cart.json">退换货政策</a></td>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">发票制度</a></td>
-                    <td><a class="a1" href="/cart.json">网上支付</a></td>
-                    <td><a class="a1" href="/cart.json">订单状态说明</a></td>
-                    <td><a class="a1" href="/cart.json">验货与签收</a></td>
-                    <td><a class="a1" href="/cart.json">自助申请退换货</a></td>
-
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">帐户管理</a></td>
-                    <td><a class="a1" href="/cart.json">汇积分支付</a></td>
-                    <td><a class="a1" href="/cart.json">自助取消订单</a></td>
-                    <td><a class="a1" href="/cart.json">退款方式和时间</a></td>
-                    <td><a class="a1" href="/cart.json">退换货进度查询</a></td>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">会员优惠</a></td>
-                    <td><a class="a1" href="/cart.json">银行转帐</a></td>
-                    <td><a class="a1" href="/cart.json">自助修改订单</a></td>
-                </tr>
-
-            </table>
-        </div>
-        <div class="table_aboutus">
-            <table width="1000" border="0" cellspacing="5px" cellpadding="10px">
-                <tr>
-                    <th align="center">关于诚易</th>
-                    <th align="center">诚易支付</th>
-                    <th align="center">联系我们</th>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">诚易官网</a></td>
-                    <td><a class="a1" href="/cart.json">货到付款</a></td>
-                    <td><a class="a1" href="/cart.json">客服电话</a></td>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">联系我们</a></td>
-                    <td><a class="a1" href="/cart.json">在线支付</a></td>
-                    <td><a class="a1" href="/cart.json">400-666-0582</a></td>
-
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">诚易简介</a></td>
-                    <td><a class="a1" href="/cart.json">支付说明</a></td>
-                    <td><a class="a1" href="/cart.json">08754-21132121</a></td>
-                </tr>
-                <tr>
-                    <td><a class="a1" href="/cart.json">广告服务</a></td>
-                    <td><a class="a1" href="/cart.json"></a></td>
-                    <td><a class="a1" href="/cart.json"></a></td>
-                </tr>
-
-            </table>
-        </div>
-    </div>
-    <!-- end 联系方式，网站说明，合作伙伴等-->
-
+    <%@include file="WEB-INF/jsp/footer.jsp"%>
+    
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/jquery-3.2.1.min.js"> </script>
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/bootstrap.min.js"> </script>
 <script type="text/javascript" src="${ctx}/resources/js/jqthumb.min.js"></script>
