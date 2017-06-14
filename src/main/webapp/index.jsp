@@ -12,7 +12,7 @@
 <body>
 
     <!-- 页面头部引入-->
-    <%@include file="WEB-INF/jsp/header.jsp" %>
+    <jsp:include page="WEB-INF/jsp/header.jsp"/>
 
     <!-- 产品分类及产品轮播区 -->
     <div class="category_banner_area">
@@ -429,8 +429,8 @@
         </div>
     </div>
     <!-- end推荐产品区 -->
-    <%@include file="WEB-INF/jsp/footer.jsp"%>
-    
+    <jsp:include page="WEB-INF/jsp/footer.jsp"/>
+
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/jquery-3.2.1.min.js"> </script>
 <script language="javascript" type="text/javascript" src="${ctx}/resources/js/bootstrap/bootstrap.min.js"> </script>
 <script type="text/javascript" src="${ctx}/resources/js/jqthumb.min.js"></script>
