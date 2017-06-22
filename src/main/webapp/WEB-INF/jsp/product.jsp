@@ -20,54 +20,6 @@
         <!-- 商品预览区，商品价格信息区，店铺信息区 -->
         <div class="category_div">
             <ul>
-                <%--<li>--%>
-                    <%--<div class="Xcontent">--%>
-                        <%--<ul class="Xcontent01">--%>
-
-                            <%--<div class="Xcontent06"><img src="${ctx}/resources/img/details/X1.png"></div>--%>
-                            <%--<ol class="Xcontent08">--%>
-                                <%--<div class="Xcontent07"><img src="${ctx}/resources/img/details/X1.png"></div>--%>
-                                <%--<div class="Xcontent09"><img src="${ctx}/resources/img/details/X7.png"></div>--%>
-                                <%--<div class="Xcontent10"><img src="${ctx}/resources/img/details/X8.png"></div>--%>
-                                <%--<div class="Xcontent11"><img src="${ctx}/resources/img/details/X9.png"></div>--%>
-                                <%--<div class="Xcontent12"><img src="${ctx}/resources/img/details/X10.png"></div>--%>
-                            <%--</ol>--%>
-                            <%--<ol class="Xcontent13">--%>
-                                <%--<div class="Xcontent14"><a href="#"><p>新物品</p></a></div>--%>
-                                <%--<div class="Xcontent15"><img src="${ctx}/resources/img/details/X11.png"></div>--%>
-                                <%--<div class="Xcontent16"><p>充电5分钟，温暖2小时</p></div>--%>
-                                <%--<div class="Xcontent17">--%>
-                                    <%--<p class="Xcontent18">售价</p>--%>
-                                    <%--<p class="Xcontent19">￥<span>69.00</span></p>--%>
-                                    <%--<div class="Xcontent20">--%>
-                                        <%--<p class="Xcontent21">促销</p>--%>
-                                        <%--<img src="${ctx}/resources/img/details/X12.png">--%>
-                                        <%--<p class="Xcontent22">领610元新年礼券，满再赠好礼</p>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="Xcontent23">--%>
-                                        <%--<p class="Xcontent24">服务</p>--%>
-                                        <%--<p class="Xcontent25">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp;       48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp;        满88元免邮</p>--%>
-                                    <%--</div>--%>
-
-                                <%--</div>--%>
-                                <%--<div class="Xcontent26">--%>
-                                    <%--<p class="Xcontent27">颜色</p>--%>
-                                    <%--<div class="Xcontent28"><img  src="${ctx}/resources/img/details/X14.png"></div>--%>
-                                    <%--<div class="Xcontent29"><img  src="${ctx}/resources/img/details/X1.png"></div>--%>
-                                <%--</div>--%>
-                                <%--<div class="Xcontent30">--%>
-                                    <%--<p class="Xcontent31">数量</p>--%>
-                                    <%--<div class="Xcontent32"><img src="${ctx}/resources/img/details/X15.png"></div>--%>
-                                    <%--<form><input class="input" value="1"></form>--%>
-                                    <%--<div class="Xcontent33"><img src="${ctx}/resources/img/details/X16.png"></div>--%>
-                                <%--</div>--%>
-                                <%--<div class="Xcontent34"><a href="#"><img src="${ctx}/resources/img/details/X17.png"></a></div>--%>
-                                <%--<div class="Xcontent35"><a href="#"><img src="${ctx}/resources/img/details/X18.png"></a></div>--%>
-
-                            <%--</ol>--%>
-                        <%--</ul>--%>
-                    <%--</div>--%>
-                <%--</li>--%>
                 <li>
                     <div class="categorys_area">
                         <div class="category_banner">
@@ -82,17 +34,63 @@
                         </div>
 
                         <div class="category_detail">
+                            <!-- 标题-->
                             <div><span class="title">250ml红牛维生素饮料</span><img class="ptag" src="${ctx}/resources/img/details/X11.png"></div>
-                            <ul>
-                                <li><span class="name">价格:</span><span class="price">Y34.56</span></li>
-                                <li><span class="name">商品评分:</span><span class="value">***** 0.0分</span></li>
-                                <li><span class="name">商品编号:</span><span class="value">12289472193</span></li>
-                                <li><span class="name">类型:</span><span class="value">免费配送</span></li>
+                            <!-- 基本信息-->
+                            <ul class="baisc">
+                                <li>
+                                    <p>
+                                    <label class="name">售价</label><label class="price">￥<span>69.00</span></label>
+                                    </p>
+                                </li>
+                                <li class="test">
+                                    <p>
+                                    <label class="name">促销</label>
+                                    <img class="prop_img" src="${ctx}/resources/img/details/X12.png"><span class="promption">领610元新年礼券,满再赠好礼</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><label class="name">编号</label><span class="value">12289472193</span></p>
+                                </li>
+                                <li>
+                                    <p>
+                                    <label class="name">服务</label><span class="value">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp;       48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp;        满88元免邮</span>
+                                    </p>
+                                </li>
                             </ul>
-                            <ul class="btns">
-                                <li><div class="buynow"><a href="#"><img src="${ctx}/resources/img/X17.png"></a></div></li>
-                                <li><div class="addcart"><a href="#"><img src="${ctx}/resources/img/X18.png"></a></div></li>
-                            </ul>
+                            <!-- 颜色-->
+                            <div class="color_box">
+                                <p>颜色</p>
+                                <ul>
+                                    <li><div><img src="${ctx}/resources/img/details/X14.png"></div></li>
+                                    <li><div><img src="${ctx}/resources/img/details/X1.png"></div></li>
+                                </ul>
+                            </div>
+
+                            <%--<div style="border: 1px solid #FA5000;height: 100px;padding: 0px;margin: 0px">--%>
+                                <%--<span style="float: left;border: 1px solid #f00;margin: 0px">数量</span>--%>
+                                <%--<p style="float: left;margin-left: 50px;">--%>
+                                    <%--<a href="#"><img src="${ctx}/resources/img/X17.png"/></a>--%>
+                                    <%--<a href="#"><img src="${ctx}/resources/img/X18.png"/></a>--%>
+                                <%--</p>--%>
+                            <%--</div>--%>
+
+                            <!-- 数量-->
+                            <div class="count_box">
+                                <div>
+                                <span class="count">数量</span>
+                                <div class="delete"><img src="${ctx}/resources/img/details/X15.png"></div>
+                                <form><input class="input" value="1"></form>
+                                <div class="add"><img src="${ctx}/resources/img/details/X16.png"></div>
+                                </div>
+                            </div>
+
+                            <!--加入购物车或购买-->
+                            <div class="btns">
+                                <a href="#"><img src="${ctx}/resources/img/X17.png"/></a>
+                                <a href="#"><img src="${ctx}/resources/img/X18.png"/></a>
+                            </div>
+
                         </div>
                         <%--<div class="category_store">--%>
                             <%--<span>春花秋月</span>--%>
@@ -107,6 +105,35 @@
             </ul>
         </div>
         <!-- end商品预览区，商品价格信息区，店铺信息区 -->
+
+        <div class="detail_tabs">
+            <!-- tab标签 -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#detail" data-toggle="tab">商品详情</a></li>
+                <li><a href="#ios" data-toggle="tab">规格参数</a></li>
+                <li><a href="#service" data-toggle="tab">售后服务</a></li>
+                <li><a href="#pro_comment" data-toggle="tab">商品评价</a></li>
+                <li><a href="#com_chat" data-toggle="tab">社区互动</a></li>
+            </ul>
+            <!-- 每个tab页对应的内容 -->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="detail">
+                    <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点。</p>
+                </div>
+                <div class="tab-pane fade" id="ios">
+                    <p>iOS 是一个由苹果公司开发和发布的手机操作系统。</p>
+                </div>
+                <div class="tab-pane fade" id="service">
+                    <p>jMeter 是一款开源的测试软件。</p>
+                </div>
+                <div class="tab-pane fade" id="pro_comment">
+                    <p>商品评价</p>
+                </div>
+                <div class="tab-pane fade" id="com_chat">
+                    <p>社区互动</p>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- 引入尾部 -->
